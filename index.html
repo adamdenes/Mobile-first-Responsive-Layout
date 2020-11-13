@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Responsive Layout</title>
@@ -30,7 +29,7 @@
             </section>
         </div>
     </header>
-    <main class="wrapper">
+    <main class="wrapper clearfix">
         <h2>Portfolio</h2>
         <div class="content">
             <img class="picture" src="/images/portfolio-1.png" alt="Marketing picture">
@@ -82,8 +81,8 @@
     </main>
 
     <footer>
-        <div class="wrapper">
-        <section>
+        <div class="wrapper clearfix">
+        <section class="footer-wrap">
             <h3>Contact</h3>
             <p>If you're interested in chatting or want more information about what I've been working on, I'd love to
                 hear from you!</p>
@@ -93,7 +92,12 @@
         </section>
         <div class="bottom">
             <h4 class="footer-name">Student name</h4>
-            <span class="footer-nav"><a href="#">Back To Top</a></span>
+            <ul>
+                <li class="footer-nav"><a href="#">Back To Top</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </div>
         </div>
     </footer>
