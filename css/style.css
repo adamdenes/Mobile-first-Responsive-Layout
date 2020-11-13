@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+body {
+    background-color: rgba(240, 255, 255, .9);
+}
+
 body,
 footer {
     text-align: center;
@@ -34,6 +38,11 @@ h1 {
     padding: 30px 0;
 }
 
+h2 {
+    padding-top: 20px;
+    border-top: 1px solid rgba(139, 136, 136, .19);
+}
+
 h1,
 h2,
 h3,
@@ -48,12 +57,21 @@ li {
 
 a {
     background-color: #fff;
+    border: 1px solid black;
     font-size: 1.25em;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
     display: block;
-    padding: 0.8em 0;
+    padding: 0.5rem 0.5rem;
+}
+
+a:active {
+    color: cadetblue;
+}
+
+a:hover {
+    background-color: azure;
 }
 
 p {
@@ -64,7 +82,7 @@ p {
 div p {
     font-size: 1.25em;
     line-height: 1.3em;
-    color: #0000005c;
+    color: cadetblue;
 }
 
 main h2,
@@ -88,6 +106,43 @@ span {
     color: rgb(139, 136, 136);
     font-weight: bold;
     padding-left: 12px;
+}
+
+#skills {
+    border: 1px solid purple;
+    border-radius: 3px;
+    box-shadow: 0px 0px 8px 3px rgba(39,74,145,0.41);
+    margin-bottom: 40px;
+    width: 90%;
+    margin: 0 auto 40px auto;
+}
+
+#skills h2 {
+    padding: 12px 0;
+    text-transform: capitalize;
+}
+
+#skills ul {
+    padding: 1.5rem;
+}
+
+#skills li {
+    border-radius: 6px;
+    display: inline-block;
+    background: #ff9904;
+    color: white;
+    padding: 5px 10px;
+    margin: 2px;
+}
+
+#skills li:nth-child(even) {
+    background: #0399ff;
+  }
+
+#skills p {
+    padding: 0 .5rem 1rem .5rem;
+    font-size: 1.2em;
+    color: cadetblue;
 }
 
 /* Class Styles */
@@ -138,6 +193,7 @@ span {
     font-size: .9rem;
     color: #000;
     display: inline;
+    border: none;
 }
 
 /* Clear fix */
@@ -152,7 +208,7 @@ span {
     
     nav li {
         display: inline-block;
-        padding-right: 29px;
+        margin-left: 29px;
     }
 
     nav a {
@@ -216,7 +272,12 @@ span {
     .bottom a {
         display: block;
         background-color: #f5f5f5;
-        padding: 0 0 0 1rem;
+        margin: 0 0 0 1rem;
+        border: none;
+    }
+
+    .bottom a:hover {
+        background-color: azure;
     }
 
     .footer-name {
@@ -232,6 +293,10 @@ span {
         width: 75%;
         margin: 0 auto;
     }
+
+    #skills {
+        max-width: 40%;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -242,6 +307,10 @@ span {
 
     header p {
         padding: 0 3rem 0 0;
+    }
+
+    .wrapper {
+        max-width: 1300px;
     }
 
     nav {
@@ -263,6 +332,7 @@ span {
 
     .content {
         width: 31.3%;
+        height: 450px;
         margin-right: 1%;
         margin-left: 1%;
         margin-bottom: 0;
